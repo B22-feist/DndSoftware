@@ -1,26 +1,22 @@
 //using dbStuff;
+using System.Collections;
 using System.Data;
 using MainFunction.Database;
 using MainFunction.MathsFunctions;
 using MainFunction.StatBlocks.DndClasses.GeneralClassMethods;
 
 //this namespace is used to display information
-namespace MainFunction {
-	class Program
+namespace MainFunction;
+
+class Program
+{
+	static void Main()
 	{
-		static void Main()
-		{
-			StatBlockClass Testing = new StatBlockClass();
-			
-			List<int> inputList = [5];
-			List<string> Classinput = ["fighter"];
+		StatblockProficienciesClass Testing = new();
 
-			Dictionary<String, object> TestingDic = Testing.StatBlockGeneratorAbilityScoresModifiers(inputList, "HalfElf", Classinput);
+		List<string> Classes = ["barbarian", "wizard"];
 
-			foreach (var VARIABLE in TestingDic)
-			{
-				Console.WriteLine(VARIABLE);
-			}
-		}
+		List<int> Levels = [4];
+		
 	}
 }

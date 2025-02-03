@@ -8,7 +8,7 @@ namespace MainFunction.Database
 	{
 		public int IntDump;
 		private Dictionary <int, string> _databaseCalls = new Dictionary<int, string>() {
-			{1, "SELECT * FROM spells" }
+			{1, $"SELECT * FROM spells" }
 		};
 		private DataTable ConnectToDatabase(string requestedDatabase)
 		{
